@@ -1,4 +1,4 @@
-FROM telethonArab/telethonAr:slim-buster
+FROM qithoniq/qithon1:slim-buster
 
 #clonning repo 
 RUN git clone https://github.com/qithoniq.git /root/userbot
