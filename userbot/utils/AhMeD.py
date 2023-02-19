@@ -41,7 +41,7 @@ def load_module(shortname, plugin_path=None):
         mod.LOGS = LOGS
         mod.Config = Config
         mod._format = _format
-        mod.tgbot = iqthon.tgbot
+        mod.tgbot = qithon.tgbot
         mod.sudo_cmd = sudo_cmd
         mod.CMD_HELP = CMD_HELP
         mod.reply_id = reply_id
@@ -54,7 +54,7 @@ def load_module(shortname, plugin_path=None):
         mod.parse_pre = _format.parse_pre
         mod.edit_or_reply = edit_or_reply
         mod.logger = logging.getLogger(shortname)
-        mod.borg = iqthon
+        mod.borg = qithon
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
