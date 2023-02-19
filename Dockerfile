@@ -1,7 +1,7 @@
 FROM qithoniq/qithon1:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/qithoniq.git /root/userbot
+RUN git clone https://github.com/qithoniq/qithon1.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
