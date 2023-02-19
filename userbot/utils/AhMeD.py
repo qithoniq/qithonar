@@ -98,5 +98,5 @@ def checkplugins(filename):
     filedata = filedata.replace("sendmessage", "send_message")
     filedata = filedata.replace("sendfile", "send_file")
     filedata = filedata.replace("editmessage", "edit_message")
-    with open(filename, "w") as klanr:
+    with open(filename, "w") as AhMeD:
         klanr.write(filedata)
