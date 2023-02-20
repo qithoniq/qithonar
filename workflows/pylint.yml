@@ -58,7 +58,7 @@ jobs:
 
           repository: .
 
-          commit_user_name: Tepthonee
+          commit_user_name: qithon
 
           commit_user_email: Tepthonee@users.noreply.github.com
 
