@@ -139,7 +139,7 @@ NO_ADMIN = "**♛ ⦙ عذرا لست ادمن هنا **"
 NO_PERM = "**♛ ⦙ ليس لدي صلاحيات ادمن كافية! **"
 
 
-@iqthon.on(admin_cmd(pattern=r"المحظورين?(.*)"))
+@qithon.on(admin_cmd(pattern=r"المحظورين?(.*)"))
 async def gablist(event):
     gbanned_users = gban_sql.get_all_gbanned()
     GBANNED_LIST = "Current Gbanned Users\n"
@@ -154,7 +154,7 @@ async def gablist(event):
     else:
         GBANNED_LIST = "لايوجد محضورين "
     await edit_or_reply(event, GBANNED_LIST)
-@iqthon.on(admin_cmd(pattern="تشفير الملف ?(.*)"))
+@qithon.on(admin_cmd(pattern="تشفير الملف ?(.*)"))
 async def pyZip(e):
     if e.fwd_from:
         return
