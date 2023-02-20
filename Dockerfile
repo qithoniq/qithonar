@@ -1,13 +1,21 @@
-FROM qithoniq/qithon1:slim-buster
+FROM qithon/qithonar:alpine
 
 #clonning repo 
-RUN git clone https://github.com/qithoniq/qithon1.git /root/userbot
+
+RUN git clone https://github.com/qithon/qithonar.git /root/qithonar
+
 #working directory 
-WORKDIR /root/userbot
+
+WORKDIR /root/qithonar
 
 # Install requirements
-RUN pip3 install --no-cache-dir -r requirements.txt
 
-ENV PATH="/home/userbot/bin:$PATH"
+RUN pip3 install -U -r requirements.txt
 
-CMD ["python3","-m","userbot"]
+ENV PATH="/home/qithonar/bin:$PATH"
+
+CMD ["python3","-m","qithonar"]
+
+
+
+
