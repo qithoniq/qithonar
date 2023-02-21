@@ -2,13 +2,15 @@
 
   "name": "سورس جيثون العرب الاصلي",
 
-  "description": "اهلا بك في تليثون العرب الأصلي { @qithon }",
+  "description": "اهلا بك في جيثون
+
+   "العرب الأصلي { @qithon }",
 
   "logo": "https://telegra.ph/file/e64d3661d197905323028.jpg",
 
   "keywords": ["plugin","modular","productivity"],
 
-  "repository": "https://github.com/help-iq2/telethon",
+  "repository": "https://github.com/qithoniq/qithonar",
 
   "website": "#TODO",
 
