@@ -58,8 +58,8 @@ jobs:
 
           repository: .
 
-          commit_user_name: qithonee
+          commit_user_name: qithoniq
 
-          commit_user_email: qithonee@users.noreply.github.com
+          commit_user_email: qithoniq@users.noreply.github.com
 
-          commit_author: jmthonr <qithonee@users.noreply.github.com>
+          commit_author: jmthonr <qithoniq@users.noreply.github.com>
