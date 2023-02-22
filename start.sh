@@ -1,5 +1,11 @@
-#!/bin/bash
+cd /app
 
-echo "---جار تشغيل سورس جيثون--"
+echo "----- Now deployed web booting your repo ------ " 
 
-python3 -m qithonar
+gunicorn app:app & python3 -m qithonar
+
+
+
+
+
+
