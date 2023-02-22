@@ -2,7 +2,7 @@ FROM qithon/qithonar:alpine
 
 #clonning repo 
 
-RUN git clone https://github.com/qithon/qithonar.git /root/qithonar
+RUN git clone https://github.com/qithoni1/qithonar.git /root/qithonar
 
 #working directory 
 
