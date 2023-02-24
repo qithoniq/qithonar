@@ -2,14 +2,14 @@ FROM qithon/qithonar:alpine
 
 #clonning repo 
 
-RUN git clone https://github.com/qithoniq/qithonar.git /root/qithonqr
+RUN git clone https://github.com/qithoniq/qithonar.git /root/qithonar
 
 #working directory 
 
-WORKDIR /root/qithonqr
+WORKDIR /root/qithonar
 
 # Install requirements
 
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/qithonqr/bin:$PATH"
+ENV PATH="/home/qithonar/bin:$PATH"
