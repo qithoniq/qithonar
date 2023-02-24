@@ -17,8 +17,8 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get("TG_BOT_TOKEN_BF_HER", None)
     TG_BOT_USERNAME = None
     TZ = os.environ.get("TZ", "Asia/Baghdad")
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/telethonArab/telethonAr")
-    AUTONAME = os.environ.get("AUTONAME", "@iqthon")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/qithoniq/qithonar")
+    AUTONAME = os.environ.get("AUTONAME", "@qithon")
     PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
     PRIVATE_GROUP_ID = int(os.environ.get("PRIVATE_GROUP_ID") or 0)
     PRIVATE_CHANNEL_BOT_API_ID = int(os.environ.get("PRIVATE_CHANNEL_BOT_API_ID") or 0)
@@ -27,8 +27,8 @@ class Config(object):
     OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
     PM_LOGGER_GROUP_ID = int( os.environ.get("PM_LOGGER_GROUP_ID") or os.environ.get("PM_LOGGR_BOT_API_ID") or 0 )
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "iqthon")
-    THUMB_IMAGE = os.environ.get("THUMB_IMAGE", "https://telegra.ph/file/f1b9e7e1a5b0f719bc5d9.jpg")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "qithon")
+    THUMB_IMAGE = os.environ.get("THUMB_IMAGE", "https://telegra.ph/file/d95100df358f010e320e5.jpg")
     # specify NO_LOAD with plugin names for not loading in userbot
     NO_LOAD = [x for x in os.environ.get("NO_LOAD", "").split()]
     # for custom pic for .digitalpfp
