@@ -20,7 +20,7 @@ from . import CMD_INFO, GRP_INFO, PLG_INFO, check_owner
 from .logger import logging
 LOGS = logging.getLogger(__name__)
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/1bf9c1b0a084c258b1f97.jpg"
+CATLOGO = "https://telegra.ph/file/d95100df358f010e320e5.jpg"
 tr = Config.COMMAND_HAND_LER
 def getkey(val):
     for key, value in GRP_INFO.items():
@@ -38,7 +38,7 @@ def ibuild_keyboard(buttons):
             keyb.append([Button.url(btn[0], btn[1])])
     return keyb
 
-@iqthon.tgbot.on(InlineQuery)
+@qithon.tgbot.on(InlineQuery)
 async def inline_handler(event):  
     builder = event.builder
     result = None
@@ -51,11 +51,11 @@ async def inline_handler(event):
     if query_user_id == Config.OWNER_ID or query_user_id in Config.SUDO_USERS:
         hmm = re.compile("همسه (.*) (.*)")
         match = re.findall(hmm, query)
-        if query.startswith("**iqthonbot"):
+        if query.startswith("**qithonbot"):
             buttons = [
                 (
                     Button.inline("السورس", data="stats"),
-                    Button.url("الريبو", "https://github.com/telethon-Arab/telethonNow"),
+                    Button.url("الريبو", "https://github.com/qithoniq-Arab/qithonarNow"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -319,7 +319,7 @@ async def inline_handler(event):
             type="photo",
             title="iqthon",
             description="نصب لنفسك",
-            url="https://dashboard.heroku.com/new?template=https://github.com/telethon-Arab/teletho-help",
+            url="https://dashboard.heroku.com/new?template=https://github.com/qithoniq-Arab/qithonar-help",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
