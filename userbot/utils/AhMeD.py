@@ -8,12 +8,12 @@ from ..Config import Config
 from ..core import LOADED_CMDS, PLG_INFO
 from ..core.logger import logging
 from ..core.managers import edit_delete, edit_or_reply
-from ..core.session import iqthon
+from ..core.session import qithon
 from ..helpers.tools import media_type
 from ..helpers.utils import _cattools, _catutils, _format, install_pip, reply_id
 from .decorators import admin_cmd, sudo_cmd
 
-LOGS = logging.getLogger("———————× IQ")
+LOGS = logging.getLogger("———————× QI")
 
 
 def load_module(shortname, plugin_path=None):
@@ -58,7 +58,7 @@ def load_module(shortname, plugin_path=None):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info(f"[تم تحميل : {shortname}] \n ———————× IQ")
+        LOGS.info(f"[تم تحميل : {shortname}] \n ———————× QI")
 
 
 def remove_plugin(shortname):
@@ -99,4 +99,4 @@ def checkplugins(filename):
     filedata = filedata.replace("sendfile", "send_file")
     filedata = filedata.replace("editmessage", "edit_message")
     with open(filename, "w") as AhMeD:
-        klanr.write(filedata)
+        AhMeD.write(filedata)
