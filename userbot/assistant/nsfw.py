@@ -12,7 +12,7 @@ from ..core.logger import logging
 LOGS = logging.getLogger(__name__)
 
 
-@iqthon.tgbot.on(CallbackQuery(data=re.compile(r"^age_verification_true")))
+@qithon.tgbot.on(CallbackQuery(data=re.compile(r"^age_verification_true")))
 async def age_verification_true(event: CallbackQuery):
     u_id = event.query.user_id
     if u_id != Config.OWNER_ID and u_id not in Config.SUDO_USERS:
@@ -30,14 +30,14 @@ async def age_verification_true(event: CallbackQuery):
     try:
         await event.edit(
             text="Set `ALLOW_NSFW` = True in Database Vars to access this plugin",
-            file="https://telegra.ph/file/b0fc7897e7e090e8779a2.jpg",
+            file="https://telegra.ph/file/b0fc78977090e8779a2.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
         pass
 
 
-@iqthon.tgbot.on(CallbackQuery(data=re.compile(r"^age_verification_false")))
+@qithon.tgbot.on(CallbackQuery(data=re.compile(r"^age_verification_false")))
 async def age_verification_false(event: CallbackQuery):
     u_id = event.query.user_id
     if u_id != Config.OWNER_ID and u_id not in Config.SUDO_USERS:
@@ -55,14 +55,14 @@ async def age_verification_false(event: CallbackQuery):
     try:
         await event.edit(
             text="GO AWAY KID !",
-            file="https://telegra.ph/file/b0fc7897e7e090e8779a2.jpg",
+            file="https://telegra.ph/file/b0fc7897ee090e8779a2.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
         pass
 
 
-@iqthon.tgbot.on(CallbackQuery(data=re.compile(r"^chg_of_decision_")))
+@qithon.tgbot.on(CallbackQuery(data=re.compile(r"^chg_of_decision_")))
 async def chg_of_decision_(event: CallbackQuery):
     u_id = event.query.user_id
     if u_id != Config.OWNER_ID and u_id not in Config.SUDO_USERS:
@@ -80,7 +80,7 @@ async def chg_of_decision_(event: CallbackQuery):
     try:
         await event.edit(
             text="**ARE YOU OLD ENOUGH FOR THIS ?**",
-            file="https://telegra.ph/file/c4484ad9265d4491f1c01.jpg",
+            file="https://telegra.ph/file/c484ad9265d4491f1c01.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
