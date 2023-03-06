@@ -312,12 +312,12 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "iqthon.", "md"
+            "qithon.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="iqthon",
+            title="qithon",
             description="نصب لنفسك",
             url="https://dashboard.heroku.com/new?template=https://github.com/qithoniq-Arab/qithonar-help",
             thumb=photo,
