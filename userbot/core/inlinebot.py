@@ -327,14 +327,14 @@ async def inline_handler(event):
             ),
         )
         await event.answer([result] if result else None)
-@iqthon.tgbot.on(CallbackQuery(data=re.compile(b"close")))
+@qithon.tgbot.on(CallbackQuery(data=re.compile(b"close")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
         (Button.inline("Open Menu", data="mainmenu"),),
     ]
     await event.edit("Menu Closed", buttons=buttons)
-@iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
+@qithon.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     _result = main_menu()
